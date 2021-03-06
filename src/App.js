@@ -2,6 +2,7 @@ import './App.css';
 import BotonIncrement from './components/BotonIncrement';
 import React from 'react';
 import Timer from './components/Timer';
+import ShowHide from './components/ShowHide';
 
 class App extends React.Component {
   constructor(props){
@@ -54,6 +55,9 @@ class App extends React.Component {
         <BotonIncrement valor={this.state.valorBoton[2]} incrementar={() => this.incrementar(2)} />    
         <br />
         <Timer />
+        <br />
+        <ShowHide />
+
       </div>
     );
   }
